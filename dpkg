@@ -1,0 +1,25 @@
+Проблема в зависимостях так, как dpkg не разрешает зависимости:
+
+dpkg: dependency problems prevent configuration of tor:
+ tor depends on libevent-2.1-6 (>= 2.1.8-stable); however:
+  Package libevent-2.1-6 is not installed.
+ tor depends on libssl1.1 (>= 1.1.0); however:
+  Package libssl1.1 is not installed.
+
+
+Как исправть:
+
+Проверить какая версия есть в репозитории
+
+$ apt show tor
+Package: tor
+Version: 0.4.6.10-1
+...
+
+Значит пакет, который есть у нас - устаревшая версия - 0.3.2...
+
+Установим версию из репозиториев Ubuntu:
+
+$ sudo apt install tor
+
+P.S. Единственное, кажется он уже был у меня установлен.
