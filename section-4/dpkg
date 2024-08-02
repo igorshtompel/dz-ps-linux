@@ -23,3 +23,15 @@ Version: 0.4.6.10-1
 $ sudo apt install tor
 
 P.S. Единственное, кажется он уже был у меня установлен.
+
+P.S. Также можно было пойти альтернативным путем:
+
+Например, установить libssl1 так:
+
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+
+https://gist.github.com/joulgs/c8a85bb462f48ffc2044dd878ecaa786
+
+И также нужную версию libevent, но лучше и безопасней ставить
+актуальную версию, а пакеты из актуального репозитория.
