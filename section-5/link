@@ -1,0 +1,8 @@
+$ ls -la 777
+lrwxrwxrwx 1 max max 7 Aug  4 12:29 777 -> file777
+
+
+Абсолютный путь:
+
+$ ls -la /home/max/empty/777
+lrwxrwxrwx 1 max max 7 Aug  4 12:29 /home/max/empty/777 -> file777

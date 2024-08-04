@@ -1,0 +1,2 @@
+$ grep -rnw . -e "You*"
+./file777:1:You got me!
