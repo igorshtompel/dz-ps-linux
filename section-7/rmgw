@@ -1,0 +1,1 @@
+$ sudo ip route delete 172.20.236.10/24 dev enp0s8

@@ -1,0 +1,9 @@
+$ sudo ip route add 172.20.236.10/24 via 1.1.1.0/24 dev enp0s8
+Error: inet address is expected rather than "1.1.1.0/24".
+
+$ ip r
+default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
+10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100 
+169.254.0.0/16 dev enp0s3 scope link metric 1000 
+172.20.236.0/24 dev enp0s8 proto kernel scope link src 172.20.236.10 
+192.168.56.0/24 dev enp0s8 proto kernel scope link src 192.168.56.3 metric 101 
