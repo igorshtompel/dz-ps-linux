@@ -1,0 +1,2 @@
+$ find ~/owner/ -perm 400
+/home/max/owner/file541

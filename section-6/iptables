@@ -1,0 +1,7 @@
+$ sudo apt install iptables
+...
+$ sudo iptables -L OUTPUT
+
+или
+
+$ sudo iptables -n -L OUTPUT
