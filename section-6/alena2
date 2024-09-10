@@ -1,0 +1,7 @@
+$ sudo usermod -a -G sudo alena
+
+...
+
+$ cat /etc/group | grep alena
+sudo:x:27:osboxes,max,alena
+...
