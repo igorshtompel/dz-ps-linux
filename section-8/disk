@@ -1,0 +1,3 @@
+$ sudo gdisk /dev/vdb1
+...
+Command (? for help): d

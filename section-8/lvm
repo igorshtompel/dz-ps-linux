@@ -1,0 +1,24 @@
+$ pvcreate /dev/vdb /dev/vdb
+
+$ vgcreate volume1 /dev/vdb
+
+$ lvcreate -l 100%FREE -n storage volume1
+
+$ mkfs.ext4 /dev/volume1/storage
+
+$ mkdir /mnt/vlm1
+
+$ mount /dev/volume1/storage /mnt/vlm1
+
+
+-----------------------
+
+$ mkfs.xfs /dev/volume1/storage
+
+$ mkdir /storage
+
+$ mount /dev/volume1/storage /storage
+
+$ vi /etc/fstab
+...
+/dev/volume1/storage /storage xfs rw 0 0
